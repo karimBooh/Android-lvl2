@@ -93,7 +93,6 @@ public class OfferActivity extends AppCompatActivity {
                                 }
                             }
 
-                            // specify an adapter (see also next example)
                             mAdapter = new OfferAdapter(offers);
                             recyclerView.setAdapter(mAdapter);
 

@@ -12,8 +12,6 @@ import com.google.android.material.tabs.TabLayout;
 import androidx.viewpager.widget.ViewPager;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.widget.Toast;
-
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -48,7 +46,6 @@ public class MainActivity extends AppCompatActivity {
 
         viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
 
-            // This method will be invoked when a new page becomes selected.
             @Override
             public void onPageSelected(int position) {
                 requestService.setPosition(position);
@@ -71,7 +68,6 @@ public class MainActivity extends AppCompatActivity {
                                 @Override
                                 public void onErrorResponse(VolleyError error) {
                                     // TODO: Handle error
-                                    //System.out.println(error.getMessage());
                                     System.out.println("bande de fdp");
                                     LoginDialog loginDialog = new LoginDialog(MainActivity.this);
                                     loginDialog.show();
@@ -89,8 +85,6 @@ public class MainActivity extends AppCompatActivity {
                     };
                     requestService.addToRequestQueue(jsonObjectRequest);
                 }
-                Toast.makeText(MainActivity.this,
-                        "Selected page position: " + position, Toast.LENGTH_SHORT).show();
             }
 
             @Override

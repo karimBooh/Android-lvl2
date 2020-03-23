@@ -82,7 +82,6 @@ public class PublicationFragment extends Fragment implements Observer {
                                 offers.add(offer);
                             }
 
-                            // specify an adapter (see also next example)
                             mAdapter = new OfferAdapter(offers);
                             recyclerView.setAdapter(mAdapter);
                         } catch (JSONException e) {
@@ -95,7 +94,6 @@ public class PublicationFragment extends Fragment implements Observer {
                     @Override
                     public void onErrorResponse(VolleyError error) {
                         // TODO: Handle error
-                        System.out.println("################" + error.getMessage());
 
                     }
                 }) {
@@ -104,7 +102,6 @@ public class PublicationFragment extends Fragment implements Observer {
                 Map params = new HashMap();
 
                 params.put("Authorization", requestService.getToken());
-                System.out.println(params.toString());
                 return params;
             }
         };
