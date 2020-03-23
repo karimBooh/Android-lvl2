@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">tp3</string>
+    <string name="tab_offer">Offres</string>
+    <string name="tab_sell">Vendre</string>
+    <string name="tab_annonce">Mes annonces</string>
+    <string name="email">Email :</string>
+    <string name="numeros_d_identification">Numeros d\'identification :</string>
+    <string name="prix">Prix :</string>
+    <string name="annee">Année :</string>
+    <string name="kilom_trage">Kilométrage :</string>
+    <string name="information_de_la_voiture">Information de la voiture:</string>
+    <string name="marque">Marque:</string>
+    <string name="transmission">Transmission:</string>
+    <string name="mod_le">Modèle:</string>
+    <string name="ann_e">Année</string>
+    <string name="contacter_le_vendeur">Contacter le vendeur</string>
+    <string name="vendeur">Vendeur:</string>
+    <string name="nom">Nom:</string>
+    <string name="courriel">Courriel:</string>
+    <string name="propi_taitre">Propiétaitre:</string>
+    <string name="description">Description</string>
+    <string name="acura_mdx">Acura MDX</string>
+    <string name="vendu_par_le_propri_taire">Vendu par le propriétaire:</string>
+</resources>
