@@ -84,7 +84,8 @@ public class BrandFragment extends Fragment {
                     @Override
                     public void onErrorResponse(VolleyError error) {
                         // TODO: Handle error
-                        System.out.println(error.getMessage());
+                        if (error != null && error.getMessage() != null)
+                            System.out.println(error.getMessage());
 
                     }
                 });
